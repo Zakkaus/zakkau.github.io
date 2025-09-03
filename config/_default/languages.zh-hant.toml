@@ -1,12 +1,13 @@
-languageName = "English"
-weight = 1
+languageName = "漢語"
+languageCode = "zh-Hant"
+weight = 2
 title = "Zakk"
 
 [params.author]
   name = "Zakk"
   image = "profile.jpg"
-  headline = "Australia • ambient • design • guinea pigs"
-  bio = "Gaming · Linux · Finance · Long‑distance love · 🩷💛🩵"
+  headline = "澳洲 · 療癒氛圍 · 設計 · 天竺鼠"
+  bio = "遊戲 · Linux · 金融 · 異地伴侶 · 🩷💛🩵"
   links = [
     { instagram = "https://www.instagram.com/zakk.au/" },
     { github = "https://github.com/Zakkaus" },

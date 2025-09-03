@@ -1,9 +1,7 @@
 colorScheme = "neon"
-# 若擔心首次載入延遲可先設為 true
 disableImageOptimization = false
 defaultBackgroundImage = "image.jpg"
 
-# 社群分享圖（可自訂）
 favicon = "favicon.ico"
 
 [homepage]
@@ -29,7 +27,7 @@ favicon = "favicon.ico"
   showReadingTime = true
   showRelatedContent = true
   relatedContentLimit = 3
-  showComments = false
+  showEdit = false
 
 [list]
   showCards = true
@@ -48,5 +46,7 @@ favicon = "favicon.ico"
   twitter = true
   telegram = true
 
+[taxonomy]
+  showTermCount = true
 [taxonomy]
   showTermCount = true

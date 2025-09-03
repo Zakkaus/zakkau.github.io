@@ -1,0 +1,20 @@
+[[main]]
+  name = "文章"
+  pageRef = "posts"
+  weight = 10
+
+[[main]]
+  name = "關於我"
+  pageRef = "about"
+  weight = 20
+
+[[main]]
+  pre = "github"
+  name = "GitHub"
+  url = "https://github.com/Zakkaus"
+  weight = 30
+
+[[footer]]
+  name = "隱私"
+  url = "/privacy/"
+  weight = 10

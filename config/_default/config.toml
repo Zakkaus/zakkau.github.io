@@ -1,0 +1,17 @@
+baseURL = "https://zakkau.github.io/"
+title = "Zakk"
+theme = "blowfish"
+
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+paginate = 10
+
+[permalinks]
+  posts = "/posts/:slug/"
+  about = "/about/"
+
+[outputs]
+  home = ["HTML","RSS","JSON"]
+
+[markup.goldmark.renderer]
+  unsafe = true
