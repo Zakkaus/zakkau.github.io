@@ -1,3 +1,11 @@
 放：
-- image.jpg  (首頁 / defaultBackgroundImage)
-- profile.jpg (作者頭像)
+- image.jpg  (首頁背景 / defaultBackgroundImage / homepageImage)
+- profile.jpg (作者頭像：languages.*.toml 內 params.author.image)
+可再放：
+- favicon.ico (根據 params.toml favicon)
+- 文章封面：各文章資料夾內 featured.* / background.*
+更新流程：
+1. 新增或替換圖片
+2. git add assets/
+3. git commit -m "assets: add images"
+4. git push

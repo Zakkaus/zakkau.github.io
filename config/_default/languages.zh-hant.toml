@@ -6,8 +6,8 @@ title = "Zakk"
 [params.author]
   name = "Zakk"
   image = "profile.jpg"
-  headline = "澳洲 · 療癒氛圍 · 設計 · 天竺鼠"
-  bio = "遊戲 · Linux · 金融 · 異地伴侶 · 🩷💛🩵"
+  headline = "📍 澳洲 · 🐹 天竺鼠 · 🎮 遊戲"
+  bio = "Linux · 金融 · 異地伴侶 🩷💛🩵<br/>氛圍音樂 · 設計 · 居家生活"
   links = [
     { instagram = "https://www.instagram.com/zakk.au/" },
     { github = "https://github.com/Zakkaus" },

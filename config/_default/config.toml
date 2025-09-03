@@ -5,6 +5,10 @@ theme = "blowfish"
 defaultContentLanguage = "en"
 enableRobotsTXT = true
 paginate = 10
+canonifyURLs = true
+
+# 繼承舊站主內容節點（供 recent / related）
+mainSections = ["posts"]
 
 [permalinks]
   posts = "/posts/:slug/"

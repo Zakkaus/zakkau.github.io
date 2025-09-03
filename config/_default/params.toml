@@ -1,8 +1,13 @@
+# 外觀
 colorScheme = "neon"
+defaultAppearance = "auto"          # 原 defaultTheme = auto
 disableImageOptimization = false
 defaultBackgroundImage = "image.jpg"
-
 favicon = "favicon.ico"
+
+# 自訂靜態資源（請建立對應檔案）
+additionalCSS = ["css/header-buttons.css"]
+additionalJS  = ["js/header-buttons.js"]
 
 [homepage]
   layout = "background"
@@ -24,29 +29,31 @@ favicon = "favicon.ico"
   showSummary = true
   showTableOfContents = true
   showAuthor = true
-  showReadingTime = true
+  showReadingTime = true          # 映射 ShowReadingTime
+  showBreadcrumbs = true          # 映射 ShowBreadCrumbs
   showRelatedContent = true
   relatedContentLimit = 3
   showEdit = false
+  # Blowfish 沒有直接對應 ShowPostNavLinks，若要上下篇導覽：
+  showPagination = true
 
 [list]
   showCards = true
   groupByYear = true
   cardView = true
+  showBreadcrumbs = true
 
 [footer]
   showCopyright = true
 
 [features]
   enableSearch = true
-  enableCodeCopy = true
+  enableCodeCopy = true            # 映射 ShowCodeCopyButtons
 
 [sharing]
-  enabled = true
-  twitter = true
-  telegram = true
+  enabled = false                  # 舊站 ShowShareButtons = false
+  twitter = false
+  telegram = false
 
-[taxonomy]
-  showTermCount = true
 [taxonomy]
   showTermCount = true
