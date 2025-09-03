@@ -20,7 +20,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: true
+          submodules: true      # ← 必須：抓主題
           fetch-depth: 0
 
       - name: Setup Hugo
