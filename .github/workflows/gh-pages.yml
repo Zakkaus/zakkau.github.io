@@ -3,6 +3,7 @@ name: GitHub Pages
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -21,6 +22,16 @@ jobs:
           submodules: true
           fetch-depth: 0
 
+      - name: Cache Hugo modules
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/hugo_modules
+            resources
+          key: hugo-${{ runner.os }}-${{ hashFiles('**/config/_default/*.toml') }}
+          restore-keys: |
+            hugo-${{ runner.os }}-
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -28,6 +39,9 @@ jobs:
           extended: true
 
       - name: Build
+        env:
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
         run: hugo --minify
 
       - name: Deploy to gh-pages

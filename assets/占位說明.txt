@@ -2,10 +2,17 @@
 - image.jpg  (首頁背景 / defaultBackgroundImage / homepageImage)
 - profile.jpg (作者頭像：languages.*.toml 內 params.author.image)
 可再放：
-- favicon.ico (根據 params.toml favicon)
+- favicon.ico (params.toml favicon)
 - 文章封面：各文章資料夾內 featured.* / background.*
+- 自訂網域：建 static/CNAME (內容：zakk.au) 並改 baseURL
+
 更新流程：
 1. 新增或替換圖片
 2. git add assets/
 3. git commit -m "assets: add images"
 4. git push
+
+GitHub Actions 注意：
+- 工作流檔案需位於 .github/workflows/gh-pages.yml
+- 推送 main 後觸發，輸出 gh-pages 分支
+- Settings → Pages 選 gh-pages 分支

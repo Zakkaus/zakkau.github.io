@@ -6,9 +6,21 @@ defaultContentLanguage = "en"
 enableRobotsTXT = true
 paginate = 10
 canonifyURLs = true
-
-# 繼承舊站主內容節點（供 recent / related）
 mainSections = ["posts"]
+
+enableGitInfo = true        # 供 .Lastmod / updated
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[minify]
+  disableXML = false
+  minifyOutput = true
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.6
+  filename = "sitemap.xml"
 
 [permalinks]
   posts = "/posts/:slug/"
@@ -19,3 +31,8 @@ mainSections = ["posts"]
 
 [markup.goldmark.renderer]
   unsafe = true
+
+[disableKinds]
+  # 如無需 taxonomy 列表或分類頁可放開
+  # "taxonomy"
+  # "term"
