@@ -1,0 +1,20 @@
+[[main]]
+  name = "Posts"
+  pageRef = "posts"
+  weight = 10
+
+[[main]]
+  name = "About"
+  pageRef = "about"
+  weight = 20
+
+[[main]]
+  pre = "github"
+  name = "GitHub"
+  url = "https://github.com/Zakkaus"
+  weight = 30
+
+[[footer]]
+  name = "Privacy"
+  url = "/privacy/"
+  weight = 10

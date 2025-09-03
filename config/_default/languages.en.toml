@@ -1,0 +1,15 @@
+languageName = "English"
+weight = 1
+title = "Zakk"
+
+[params.author]
+  name = "Zakk"
+  image = "profile.jpg"
+  headline = "Curious, cozy & building things."
+  bio = "Guinea pigs • design • Linux • ambient • long-distance love"
+  links = [
+    { instagram = "https://www.instagram.com/zakk.au/" },
+    { github = "https://github.com/Zakkaus" },
+    { x = "https://x.com/zakkauu" },
+    { email = "mailto:admin@zakk.au" }
+  ]

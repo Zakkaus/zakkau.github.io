@@ -1,0 +1,3 @@
+放：
+- image.jpg  (首頁 / defaultBackgroundImage)
+- profile.jpg (作者頭像)
